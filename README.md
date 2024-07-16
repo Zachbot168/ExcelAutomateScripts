@@ -46,7 +46,7 @@ This script uses the `openpyxl` library to consolidate data from multiple sheets
 
 This script is useful for combining data from multiple sheets into a single sheet, ensuring a seamless and organized dataset without redundant headers or blank spaces.
 
-### Remove Blank Rows in Excel Sheets - "blankspaceremover"
+### Remove Blank Rows in Excel Sheets - "blankspaceremover.py"
 
 This script uses the `openpyxl` library to remove completely blank rows from all worksheets in an Excel workbook.
 
@@ -56,3 +56,14 @@ This script uses the `openpyxl` library to remove completely blank rows from all
 - **Works on All Sheets:** Applies the row removal process to all worksheets within the workbook.
 
 This script is useful for cleaning up Excel files by removing unnecessary blank rows, ensuring the data remains concise and organized.
+
+### Remove Rows with Empty Columns in Excel Sheets - "removeblank.py"
+
+This script uses the `openpyxl` library to remove rows from all worksheets in an Excel workbook where any of the first three columns are empty.
+
+#### Features:
+- **Identifies Rows with Empty Columns:** Searches for rows where any of the first three columns contain empty cells.
+- **Removes Identified Rows:** Deletes rows that meet the criteria.
+- **Works on All Sheets:** Applies the row removal process to all worksheets within the workbook.
+
+This script is useful for cleaning up Excel files by removing rows with incomplete data in the first three columns, ensuring the dataset is complete and organized.
