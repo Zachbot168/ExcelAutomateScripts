@@ -34,3 +34,25 @@ This script uses the `openpyxl` library to ensure that the "DATE" and "STATION" 
 - **Works on All Sheets:** Applies the adjustments to all worksheets within the workbook.
 
 This script is useful for ensuring that critical columns like "DATE" and "STATION" are correctly positioned in your Excel sheets, facilitating better data organization and consistency across all worksheets.
+
+### Consolidate Data from Multiple Sheets into One - "consolidatedata.py"
+
+This script uses the `openpyxl` library to consolidate data from multiple sheets within an Excel workbook into a single sheet. It ensures that there is no blank space between the consolidated data from each sheet and that only the first occurrence of the header is kept.
+
+#### Features:
+- **Consolidates Data:** Merges data from all sheets into a single sheet.
+- **Removes Blank Spaces:** Ensures there are no blank spaces between data from different sheets.
+- **Single Header:** Retains only the first occurrence of the header.
+
+This script is useful for combining data from multiple sheets into a single sheet, ensuring a seamless and organized dataset without redundant headers or blank spaces.
+
+### Remove Blank Rows in Excel Sheets - "blankspaceremover"
+
+This script uses the `openpyxl` library to remove completely blank rows from all worksheets in an Excel workbook.
+
+#### Features:
+- **Identifies Blank Rows:** Searches for rows that are completely blank in all columns.
+- **Removes Blank Rows:** Deletes identified blank rows.
+- **Works on All Sheets:** Applies the row removal process to all worksheets within the workbook.
+
+This script is useful for cleaning up Excel files by removing unnecessary blank rows, ensuring the data remains concise and organized.
