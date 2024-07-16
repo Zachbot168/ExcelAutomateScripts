@@ -1,3 +1,7 @@
+### Excel Automation Organization Scripts For Flight Data
+
+I used these scripts in my internship at Cebu Pacific in order to organize useful data and remove useless data
+
 ### Unmerge Cells in Excel Sheets - "unmergedcells.py"
 
 This script uses the `openpyxl` library to unmerge cells in all worksheets of an Excel workbook. When cells are unmerged, the values from the merged cells are consolidated into a single string, which is then placed in each of the previously merged cells.
@@ -19,3 +23,14 @@ This script uses the `openpyxl` library to identify and remove all rows below th
 - **Works on All Sheets:** Applies the removal process to all worksheets within the workbook.
 
 This script is useful for cleaning up Excel files by removing unnecessary rows below critical headers such as "DEPARTURE" and "ARRIVAL", ensuring the data remains relevant and organized.
+
+### Adjust DATE and STATION Columns in Excel Sheets - "swapcolumns.py"
+
+This script uses the `openpyxl` library to ensure that the "DATE" and "STATION" columns are positioned correctly in all worksheets of an Excel workbook. Specifically, it ensures that "DATE" is in column A and "STATION" is in column B, swapping them if necessary.
+
+#### Features:
+- **Identifies Columns:** Searches for the columns containing "DATE" and "STATION" headers.
+- **Swaps Columns:** Ensures "DATE" is in column A and "STATION" is in column B, swapping the columns if needed.
+- **Works on All Sheets:** Applies the adjustments to all worksheets within the workbook.
+
+This script is useful for ensuring that critical columns like "DATE" and "STATION" are correctly positioned in your Excel sheets, facilitating better data organization and consistency across all worksheets.
