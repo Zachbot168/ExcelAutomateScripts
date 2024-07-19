@@ -26,5 +26,5 @@ def unmerge_cells(file_path, output_path):
 
 
 input_file = input("please put your input file path ")
-output_file = input("please put your output file path ")   
+output_file = input("please put your output file path ")
 unmerge_cells(input_file, output_file)
