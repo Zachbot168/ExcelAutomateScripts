@@ -43,4 +43,4 @@ def compare_excel_sheets(file1, file2, output_file):
     wb1.save(output_file)
 
 # Example usage
-compare_excel_sheets('/Users/zacharylee/Downloads/Newly Corrected Final Consolidated Ligthning Alert Monitoring July 2023 to July 2024.xlsx', '/Users/zacharylee/Downloads/new_syntaxcorrect_new_weather_observations_flightaware.xlsx', '/Users/zacharylee/Downloads/Ultimate Newly Corrected Final Consolidated Ligthning Alert Monitoring July 2023 to July 2024.xlsx')
+compare_excel_sheets('excel1_file_path', 'excel2_file_path', 'excel_output_file_path')
