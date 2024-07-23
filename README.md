@@ -61,6 +61,17 @@ This script uses the `openpyxl` library to update the "DATE" column in an Excel 
 
 This script is useful for standardizing date and time data in Excel files, making it easier to work with combined datetime values.
 
+### Compare and Merge Excel Sheets - "excelcomparer.py"
+
+This script uses the `openpyxl` library to compare two Excel sheets and merge their data based on common columns. Specifically, it matches rows from the first sheet with rows from the second sheet based on "STATION" and "DATE" columns in the first sheet and "airport_code" and "time" columns in the second sheet.
+
+#### Features:
+- **Column Matching:** Ensures necessary columns exist in both sheets before proceeding.
+- **Data Merging:** Adds headers from the second sheet to the first sheet and merges matching rows.
+- **Efficient Lookup:** Uses a dictionary for fast row lookups from the second sheet.
+
+This script is useful for combining data from two Excel files where specific columns act as keys for matching rows.
+
 ### Remove Rows Below "Departure" and "Arrival" in Excel Sheets - "findreplaceword.py"
 
 This script uses the `openpyxl` library to identify and remove all rows below the first occurrence of the titles "DEPARTURE" or "ARRIVAL" in all worksheets of an Excel workbook.
@@ -71,6 +82,18 @@ This script uses the `openpyxl` library to identify and remove all rows below th
 - **Works on All Sheets:** Applies the removal process to all worksheets within the workbook.
 
 This script is useful for cleaning up Excel files by removing unnecessary rows below critical headers such as "DEPARTURE" and "ARRIVAL", ensuring the data remains relevant and organized.
+
+### Reformat Date to Custom Format in Excel Sheets - "reformat_date_to_custom_format.py"
+
+This script uses the `openpyxl` library to reformat dates in the "DATE" column of an Excel file to a custom format (`'%Y-%m-%dT%H:%M:%SZ'`). It processes all worksheets within the workbook and handles various date formats.
+
+#### Features:
+- **Date Reformatting:** Converts date values to the custom format `'%Y-%m-%dT%H:%M:%SZ'`.
+- **Handles Multiple Formats:** Parses and reformats dates from multiple common formats.
+- **Sheet-Wide Application:** Applies the reformatting to all worksheets within the workbook.
+- **Row Deletion:** Identifies and deletes rows with unparsable date values to ensure data integrity.
+
+This script is useful for standardizing date formats in Excel files to a specific, custom format that is consistent and easily usable in various applications.
 
 ### Remove Rows with Empty Columns in Excel Sheets - "removeblank.py"
 
