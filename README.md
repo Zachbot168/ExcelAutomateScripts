@@ -50,6 +50,17 @@ This script is useful for standardizing date formats in Excel files, making them
 - Ensure the input Excel file has date values in the first column.
 - The script will skip any rows where the date format does not match the expected formats and will print a message indicating the row number and the problematic value.
 
+### Update Date with Time in Excel Sheets - "datetimecombine.py"
+
+This script uses the `openpyxl` library to update the "DATE" column in an Excel file by combining the date from the "DATE" column with the time from the "TIME STARTED (UTC)" column.
+
+#### Features:
+- **Combines Date and Time:** Merges the date from the "DATE" column with the time from the "TIME STARTED (UTC)" column to create a new datetime value.
+- **Handles Multiple Sheets:** Applies the date and time update process to all worksheets within the workbook.
+- **Removes Incomplete Rows:** Deletes rows where the "TIME STARTED (UTC)" value is missing or the date cannot be parsed.
+
+This script is useful for standardizing date and time data in Excel files, making it easier to work with combined datetime values.
+
 ### Remove Rows Below "Departure" and "Arrival" in Excel Sheets - "findreplaceword.py"
 
 This script uses the `openpyxl` library to identify and remove all rows below the first occurrence of the titles "DEPARTURE" or "ARRIVAL" in all worksheets of an Excel workbook.
