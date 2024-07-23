@@ -106,6 +106,27 @@ This script uses the `openpyxl` library to remove rows from all worksheets in an
 
 This script is useful for cleaning up Excel files by removing rows with incomplete data in the first three columns, ensuring the dataset is complete and organized.
 
+### Remove Leading Zeros from Date-Time Column in Excel Sheets - "removezeroes.py"
+
+This script uses the `openpyxl` library to remove leading zeros from date-time values in the second column of an Excel file. It processes all rows in the active worksheet and updates the date-time format accordingly.
+
+#### Features:
+- **Leading Zero Removal:** Removes leading zeros from the month, day, and hour in date-time strings.
+- **Error Handling:** Skips rows with unparsable date-time values and provides informative messages.
+
+This script is useful for cleaning up date-time values in Excel files by removing unnecessary leading zeros, ensuring a consistent and more readable format.
+
+### Remove Timezone from Time Column in Excel Sheets - "replaceparts.py"
+
+This script uses the `openpyxl` library to remove the timezone component from the "time" column in an Excel file. The script processes all worksheets within the workbook, updating date-time strings by removing the 'T' and 'Z' characters.
+
+#### Features:
+- **Timezone Removal:** Removes 'T' and 'Z' characters from date-time strings in the "time" column.
+- **Sheet-Wide Application:** Applies the changes to all worksheets within the workbook.
+- **Error Handling:** Skips sheets that do not contain a "time" column and provides informative messages.
+
+This script is useful for cleaning up date-time strings in Excel files by removing unnecessary timezone information, making the data easier to work with and more readable.
+
 ### Adjust DATE and STATION Columns in Excel Sheets - "swapcolumns.py"
 
 This script uses the `openpyxl` library to ensure that the "DATE" and "STATION" columns are positioned correctly in all worksheets of an Excel workbook. Specifically, it ensures that "DATE" is in column A and "STATION" is in column B, swapping them if necessary.
@@ -116,6 +137,17 @@ This script uses the `openpyxl` library to ensure that the "DATE" and "STATION" 
 - **Works on All Sheets:** Applies the adjustments to all worksheets within the workbook.
 
 This script is useful for ensuring that critical columns like "DATE" and "STATION" are correctly positioned in your Excel sheets, facilitating better data organization and consistency across all worksheets.
+
+### Reset Time to Midnight in Excel Sheets - "turnhourminutetimetohour.py"
+
+This script uses the `openpyxl` library to reset the time component of dates in the "DATE" column of an Excel file to midnight (`00:00:00`). The script processes all rows in the active worksheet and updates the date-time format accordingly.
+
+#### Features:
+- **Time Reset:** Sets the time component of date-time values to midnight (`00:00:00`).
+- **Handles Different Formats:** Parses date-time values in a specific format and updates them.
+- **Error Handling:** Skips rows with unparsable date-time values and provides informative messages.
+
+This script is useful for standardizing the time component of date-time values to midnight in Excel files, ensuring a consistent format for further data processing or analysis.
 
 ### Unmerge Cells in Excel Sheets - "unmergedcells.py"
 
