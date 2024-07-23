@@ -35,6 +35,21 @@ This script uses the `openpyxl` library to convert date and time from military (
 
 This script is useful for reformatting date and time values in Excel files, making them easier to read and interpret by converting them to a 12-hour format.
 
+### Reformat Date in Excel Sheets - "dateformatchange.py"
+
+This script uses the `openpyxl` library to reformat dates in an Excel file, converting them to a specific format with an extra space between the date and time.
+
+#### Features:
+- **Reformats Dates:** Transforms date values in the first column from various known formats to `M/D/Y  H:MM:SS PM/AM`.
+- **Handles Multiple Date Formats:** Supports parsing dates from several common formats to ensure compatibility.
+- **Saves Updated File:** Writes the reformatted dates to a new Excel file specified by the user.
+
+This script is useful for standardizing date formats in Excel files, making them consistent and easier to work with.
+
+#### Notes
+- Ensure the input Excel file has date values in the first column.
+- The script will skip any rows where the date format does not match the expected formats and will print a message indicating the row number and the problematic value.
+
 ### Remove Rows Below "Departure" and "Arrival" in Excel Sheets - "findreplaceword.py"
 
 This script uses the `openpyxl` library to identify and remove all rows below the first occurrence of the titles "DEPARTURE" or "ARRIVAL" in all worksheets of an Excel workbook.
