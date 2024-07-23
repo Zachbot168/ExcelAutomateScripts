@@ -24,6 +24,17 @@ This script uses the `openpyxl` library to consolidate data from multiple sheets
 
 This script is useful for combining data from multiple sheets into a single sheet, ensuring a seamless and organized dataset without redundant headers or blank spaces.
 
+### Convert Military Time to 12-Hour Format - "correctingmilitarytime.py"
+
+This script uses the `openpyxl` library to convert date and time from military (24-hour) format to 12-hour format with AM/PM in an Excel file.
+
+#### Features:
+- **Converts Time Format:** Transforms date and time values in the second column from `YYYY-MM-DD HH:MM:SS` to `YYYY-MM-DD HH:MM:SS AM/PM`.
+- **Handles Errors Gracefully:** Skips rows with incorrect date and time formats and provides informative error messages.
+- **Saves Updated File:** Writes the converted time values to a new Excel file specified by the user.
+
+This script is useful for reformatting date and time values in Excel files, making them easier to read and interpret by converting them to a 12-hour format.
+
 ### Remove Rows Below "Departure" and "Arrival" in Excel Sheets - "findreplaceword.py"
 
 This script uses the `openpyxl` library to identify and remove all rows below the first occurrence of the titles "DEPARTURE" or "ARRIVAL" in all worksheets of an Excel workbook.
